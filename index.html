@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
+    <script defer src="index.js"></script>
 </head>
 <body>
-    
+    <nav>
+        <form class="signUp">
+            <input type="text" placeholder="First Name" class="signUp__input signUp__input--firstName">
+            <input type="text" placeholder="Last Name" class="signUp__input signUp__input--lastName">
+            <input type="number" placeholder="Phone Number" maxlength="11" class="signUp__input signUp__input--phoneNumber">
+            <input type="text" placeholder="PIN" maxlength="16"
+            class="signUp__input signUp__input--pin"/>
+            <input type="submit" value="Submit">
+        </form>
+    </nav>
 </body>
 </html>
