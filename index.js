@@ -9,8 +9,14 @@ let inputSignUpPhoneNumber = document.querySelector(
   ".signUp__input--telephoneNumber");
 let inputSignUpPassword = document.querySelector(".signUp__input--password");
 
+let inputSignInPhoneNumber = document.querySelector(
+  ".signIn__input--telephoneNumber"
+);
+let inputSignInPassword = document.querySelector(".signIn__input--password");
+
 const btnSignUp = document.querySelector(".signUp__btn");
 const formSignUp = document.querySelector(".signUp");
+const btnSignIn = document.querySelector(".signIn__btn");
 
 /////////////////////////////////////////////////
 // EventListeners
@@ -19,7 +25,6 @@ const formSignUp = document.querySelector(".signUp");
 // Functions
 
 function addUser(){
-
     fetch("http://127.0.0.1:8080/registration", {
       method: "POST",
       headers: {
@@ -28,12 +33,16 @@ function addUser(){
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-    firstName: inputSignUpFirstName.value,
-    lastName: inputSignUpLastName.value,
-    telephoneNumber: inputSignUpPhoneNumber.value,
-    password: inputSignUpPassword.value}),
+        firstName: inputSignUpFirstName.value,
+        lastName: inputSignUpLastName.value,
+        telephoneNumber: inputSignUpPhoneNumber.value,
+        password: inputSignUpPassword.value}),
     })
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
+}
+
+function checkSignInUser(){
+
 }
