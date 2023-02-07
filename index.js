@@ -20,40 +20,20 @@ const formSignUp = document.querySelector(".signUp");
 
 function addUser(){
 
-  let jsonObject = {
-      "firstName": "",
-      "lastName": "",
-      "telephoneNumber": "",
-      "password": "",
-    };
-    jsonObject.firstName = inputSignUpFirstName.value;
-    jsonObject.lastName = inputSignUpLastName.value;
-    jsonObject.telephoneNumber = inputSignUpPhoneNumber.value;
-    jsonObject.password = inputSignUpPassword.value;
-
-    console.log(JSON.stringify(jsonObject));
-
     fetch("http://127.0.0.1:8080/registration", {
       method: "POST",
       headers: {
-        Accept: "*/*",
+        "Access-Control-Allow-Origin": "http://127.0.0.1:5501",
+        Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
-      mode: "no-cors",
-      body: JSON.stringify(jsonObject),
+      body: JSON.stringify({
+    firstName: inputSignUpFirstName.value,
+    lastName: inputSignUpLastName.value,
+    telephoneNumber: inputSignUpPhoneNumber.value,
+    password: inputSignUpPassword.value}),
     })
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
 }
-
-
-
-// {
-
-//     "firstName": "test",
-//     "lastName": "test",
-//     "telephoneNumber": "890",
-//     "password" : "234sd"
-
-// }
