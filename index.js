@@ -5,8 +5,9 @@
 
 let inputSignUpFirstName = document.querySelector(".signUp__input--firstName");
 let inputSignUpLastName = document.querySelector(".signUp__input--lastName");
-let inputSignUpPhoneNumber = document.querySelector(".signUp__input--phoneNumber");
-let inputSignUpPin = document.querySelector(".signUp__input--pin");
+let inputSignUpPhoneNumber = document.querySelector(
+  ".signUp__input--telephoneNumber");
+let inputSignUpPassword = document.querySelector(".signUp__input--password");
 
 const btnSignUp = document.querySelector(".signUp__btn");
 const formSignUp = document.querySelector(".signUp");
@@ -14,32 +15,36 @@ const formSignUp = document.querySelector(".signUp");
 /////////////////////////////////////////////////
 // EventListeners
 
-formSignUp.addEventListener("submit", addUser);
-
 /////////////////////////////////////////////////
 // Functions
 
-function addUser(e){
-    e.preventDefault();
+function addUser(){
 
-    fetch("http://localhost:8080/registration", {
-        method: "POST",
-        headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-        },
-        mode: "no-cors",
-        body: JSON.stringify({
-            firstName: inputSignUpFirstName.value,
-            lastName: inputSignUpLastName.value,
-            telephoneNumber: inputSignUpPhoneNumber.value,
-            password: inputSignUpPin.value,
-        }),
-        })
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.log(error)
-        );
+  let jsonObject = {
+      "firstName": "",
+      "lastName": "",
+      "telephoneNumber": "",
+      "password": "",
+    };
+    jsonObject.firstName = inputSignUpFirstName.value;
+    jsonObject.lastName = inputSignUpLastName.value;
+    jsonObject.telephoneNumber = inputSignUpPhoneNumber.value;
+    jsonObject.password = inputSignUpPassword.value;
+
+    console.log(JSON.stringify(jsonObject));
+
+    fetch("http://127.0.0.1:8080/registration", {
+      method: "POST",
+      headers: {
+        Accept: "*/*",
+        "Content-Type": "application/json",
+      },
+      mode: "no-cors",
+      body: JSON.stringify(jsonObject),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error));
 }
 
 
