@@ -24,8 +24,17 @@ const btnSignIn = document.querySelector(".signIn__btn");
 /////////////////////////////////////////////////
 // Functions
 
-function addUser(){
-    fetch("http://127.0.0.1:8080/registration", {
+const getJson = function (url, errorMsg = 'Something went wrong'){
+  return fetch(url).then|(response => {
+    if(!response.ok) throw new Error(`${errorMsg} (${response.status})`);
+
+    return response.json();
+  })
+}
+
+const addUser = async function (){
+  if(inputSignUpFirstName && inputSignUpLastName && inputSignUpPhoneNumber && inputSignUpPassword){
+    const response = await fetch("http://127.0.0.1:8080/registration", {
       method: "POST",
       headers: {
         "Access-Control-Allow-Origin": "http://127.0.0.1:5501",
@@ -36,13 +45,35 @@ function addUser(){
         firstName: inputSignUpFirstName.value,
         lastName: inputSignUpLastName.value,
         telephoneNumber: inputSignUpPhoneNumber.value,
-        password: inputSignUpPassword.value}),
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.log(error));
+        password: inputSignUpPassword.value})
+    });
+    if (response.ok) {
+      document.location.replace("/profile");
+    } else {
+      alert(response.statusText);
+    }
+  }
 }
 
-function checkSignInUser(){
+const checkSignInUser = async function(){
+  if(inputSignInPhoneNumber && inputSignInPassword){
+    const response = await fetch("http://127.0.0.1:8080/registration", {
+      method: "POST",
+      body: JSON.stringify({
+        telephoneNumber: inputSignInPhoneNumber.value,
+        password: inputSignInPassword.value,
+      }),
+      headers: {
+        "Access-Control-Allow-Origin": "http://127.0.0.1:5501",
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      }
+    });
 
+    if(response.ok){
+      document.location.replace("/profile");
+    } else {
+      alert(response.statusText);
+    }
+  }
 }
