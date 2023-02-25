@@ -56,7 +56,7 @@ const addUser = async function () {
       body: JSON.stringify({
         firstName: inputSignUpFirstName.value,
         lastName: inputSignUpLastName.value,
-        telephoneNumber: inputSignUpPhoneNumber.value,
+        telephoneNumber: `+7${inputSignUpPhoneNumber.value}`,
         password: inputSignUpPassword.value,
       }),
     });
@@ -75,7 +75,7 @@ const checkSignInUser = async function () {
     const response = await fetch("http://127.0.0.1:8080/registration", {
       method: "POST",
       body: JSON.stringify({
-        telephoneNumber: inputSignInPhoneNumber.value,
+        telephoneNumber: `+7${inputSignUpPhoneNumber.value}`,
         password: inputSignInPassword.value,
       }),
       headers: {
