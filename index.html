@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
     <script defer src="index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <form class="signUp">
-            <input type="text" placeholder="First Name" class="signUp__input signUp__input--firstName">
-            <input type="text" placeholder="Last Name" class="signUp__input signUp__input--lastName">
-            <input type="number" placeholder="Telephone Number" maxlength="11" class="signUp__input signUp__input--telephoneNumber">
-            <input type="text" placeholder="Password" maxlength="16"
-            class="signUp__input signUp__input--password"/>
-            <input type="button" class="signUp__input signUp__input--submit" onclick="addUser()" value="Submit">
-        </form>
-        <form class="signIn">
-            <input type="number" placeholder="Telephone Number" maxlength="11" class="signIn__input signIn__input--telephoneNumber">
-            <input type="text" placeholder="Password" maxlength="16"
-            class="signIn__input signIn__input--password"/>
-            <input type="button" class="signIn__input signIn__input--submit" onclick="checkSignInUser()"  value="Submit">
-        </form>
+      <form class="signUp">
+        <label for="phone">First name:</label>
+        <input
+          type="text"
+          placeholder="First Name"
+          class="signUp__input signUp__input--firstName"
+        />
+        <label for="phone">Last name:</label>
+        <input
+          type="text"
+          placeholder="Last Name"
+          class="signUp__input signUp__input--lastName"
+        />
+        <label for="phone">Phone number:</label>
+        <select name="countrycode" id="countrycode">
+          <option value="+7">+7</option>
+        </select>
+        <input
+          type="number"
+          placeholder="Telephone Number"
+          maxlength="10"
+          class="signUp__input signUp__input--telephoneNumber"
+        />
+        <label for="phone">Password:</label>
+        <input
+          type="text"
+          placeholder="Password"
+          maxlength="16"
+          class="signUp__input signUp__input--password"
+        />
+        <input
+          type="button"
+          class="signUp__input signUp__input--submit"
+          onclick="addUser()"
+          value="Submit"
+        />
+      </form>
+      <form class="signIn">
+        <label for="phone">Phone number:</label>
+        <select name="countrycode" id="countrycode">
+          <option value="+7">+7</option>
+        </select>
+        <input
+          type="number"
+          placeholder="Telephone Number"
+          maxlength="11"
+          class="signIn__input signIn__input--telephoneNumber"
+        />
+        <label for="phone">Password:</label>
+        <input
+          type="text"
+          placeholder="Password"
+          maxlength="16"
+          class="signIn__input signIn__input--password"
+        />
+        <input
+          type="button"
+          class="signIn__input signIn__input--submit"
+          onclick="checkSignInUser()"
+          value="Submit"
+        />
+      </form>
     </nav>
-</body>
+  </body>
 </html>
