@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  font-size: 1.6 rem; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Moyenage", sans-serif; }
+
+@font-face {
+  font-family: "Moyenage";
+  src: url(../fonts/Moyenage.ttf);
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: 400;
+  font-style: normal; }
+
+/*# sourceMappingURL=style.css.map */

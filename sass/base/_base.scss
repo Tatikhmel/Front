@@ -1,0 +1,17 @@
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  @extend %font;
+  font-size: 1rem;
+}
+
+body {
+  font-size: 1.6 rem;
+}

@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Kroconails</title>
     <script defer src="index.js"></script>
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a href="./index.html" class="logo">
+          <img src="./img/Logo.svg" alt="logo" />
+        </a>
+
+        <span class="hamburger">
+          <span class="hamburger__line"></span>
+        </span>
+      </div>
+    </header>
     <nav>
-      <form class="signUp">
+      <!-- <form class="signUp">
         <label for="phone">First name:</label>
         <input
           type="text"
@@ -71,7 +82,198 @@
           onclick="checkSignInUser()"
           value="Submit"
         />
-      </form>
+      </form> -->
     </nav>
+
+    <section class="promo">
+      <div class="wrapper promo__wrapper">
+        <h1 class="promo__headline">kroconails</h1>
+        <h2 class="promo__headline-additional">Маник по-пацански</h2>
+        <button class="button-main promo__button">Записаться</button>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="wrapper description__wrapper">
+        <p class="description__text">
+          Если ты так соскучился по временам, когда вместо салонов красоты ты
+          делал маникюр своей сестре, то Кроконейлс - твое идеальное место для
+          релакса и маникюра! Наша команда умеет делать свою работу безопасно и
+          качественно, так что тебе не нужно беспокоиться о том, что мы вдруг
+          увеличим твои ногти на несколько размеров. Мы предлагаем полный
+          комплекс услуг, начиная от стандартного маникюра и педикюра,
+          заканчивая дизайном ногтей и уходом за кожей рук. И, да, мы используем
+          только качественные материалы, так что ты не останешься с маникюром,
+          который стерся через полчаса. Не тяни резину, записывайся к нам на
+          прием и погрузись в мир незабываемого маникюра вместе с Kroconails!
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="wrapper gallery__wrapper"></div>
+    </section>
+
+    <section class="prices">
+      <div class="wrapper prices__wrapper">
+        <h3>Услуги</h3>
+        <ul>
+          <li>
+            <div>Маникюр + покрытие</div>
+            <div>2400</div>
+          </li>
+          <li>
+            <div>Маникюр без покрытия</div>
+            <div>1400</div>
+          </li>
+          <li>
+            <div>Снятие без последующего покрытия</div>
+            <div>200 400</div>
+          </li>
+          <li>
+            <div>IBX</div>
+            <div>400</div>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <div>Педикюр полный</div>
+            <div>2400</div>
+          </li>
+          <li>
+            <div>Педикюр</div>
+            <div>2600</div>
+          </li>
+          <li>
+            <div>Педикюр только пальцы/стопа</div>
+            <div>2200</div>
+          </li>
+          <li>
+            <div>Трещины/стержневые мозоли</div>
+            <div>300 3000</div>
+          </li>
+        </ul>
+        <button class="button-main prices__button">Записаться</button>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="wrapper products__wrapper">
+        <h3>Продукция</h3>
+      </div>
+    </section>
+
+    <section class="workshops">
+      <div class="wrapper workshops__wrapper">
+        <h3>Курсы</h3>
+        <div class="workshop__cards">
+          <div class="workshop__card">
+            <img
+              src="./img/Workshop_card.png"
+              class="workshop__card-image"
+              alt="workshop"
+            />
+            <p class="workshop__description">
+              Курс по маникюру - это возможность научиться профессионально
+              делать маникюр на уровне салона красоты. На курсе ты изучишь
+              основы маникюра, различные техники, дизайн ногтей, узнаешь о
+              гигиене и безопасности работы с клиентами. В конце курса ты
+              получишь сертификат, который подтвердит твои навыки и поможет
+              начать свою карьеру в индустрии красоты.
+            </p>
+            <button class="button_secondary workshop-purchaise__button">
+              Приобрести курс
+            </button>
+            <button class="button_secondary workshop-learn-more__button">
+              Узнать больше о курсе
+            </button>
+          </div>
+          <div class="workshop__card">
+            <img
+              src="./img/Workshop_card.png"
+              class="workshop__card-image"
+              alt="workshop"
+            />
+            <p class="workshop__description">
+              Курс по маникюру - это возможность научиться профессионально
+              делать маникюр на уровне салона красоты. На курсе ты изучишь
+              основы маникюра, различные техники, дизайн ногтей, узнаешь о
+              гигиене и безопасности работы с клиентами. В конце курса ты
+              получишь сертификат, который подтвердит твои навыки и поможет
+              начать свою карьеру в индустрии красоты.
+            </p>
+            <button class="button_secondary workshop-purchaise__button">
+              Приобрести курс
+            </button>
+            <button class="button_secondary workshop-learn-more__button">
+              Узнать больше о курсе
+            </button>
+          </div>
+          <div class="workshop__card">
+            <img
+              src="./img/Workshop_card.png"
+              class="workshop__card-image"
+              alt="workshop"
+            />
+            <p class="workshop__description">
+              Курс по маникюру - это возможность научиться профессионально
+              делать маникюр на уровне салона красоты. На курсе ты изучишь
+              основы маникюра, различные техники, дизайн ногтей, узнаешь о
+              гигиене и безопасности работы с клиентами. В конце курса ты
+              получишь сертификат, который подтвердит твои навыки и поможет
+              начать свою карьеру в индустрии красоты.
+            </p>
+            <button class="button_secondary workshop__button">
+              Приобрести курс
+            </button>
+            <button class="button_secondary workshop-learn-more__button">
+              Узнать больше о курсе
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__column-left">
+          <div class="column-left__info">
+            <h4>kroconails</h4>
+            <p>2023</p>
+          </div>
+        </div>
+        <div class="footer__column-center">
+          <div class="column-senter__info">
+            <ul>
+              <li>Главная</li>
+              <li>Инфо</li>
+              <li>Галерея</li>
+            </ul>
+          </div>
+          <div class="column-senter__info">
+            <ul>
+              <li>Услуги</li>
+              <li>Продукция</li>
+              <li>Курсы</li>
+            </ul>
+          </div>
+          <div class="column-senter__info">
+            <ul>
+              <li>Telegram</li>
+              <li>VK</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column-right">
+          <div class="column-right__info">
+            <ul>
+              <li>Звоните</li>
+              <li>+7 (911) 013-6043</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

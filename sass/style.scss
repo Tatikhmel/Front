@@ -1,0 +1,42 @@
+// Abstracts
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixin";
+
+// Base
+@import "base/base";
+@import "base/buttons";
+
+// Components
+@import "component/navigation";
+@import "component/description";
+@import "component/footer";
+@import "component/gallery";
+@import "component/prices";
+@import "component/products";
+@import "component/promo";
+@import "component/workshops";
+
+// Fonts
+@font-face {
+  font-family: "Moyenage";
+  src: url(../fonts/Moyenage.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
