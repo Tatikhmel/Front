@@ -1,0 +1,45 @@
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixin";
+
+.header {
+  background-color: $color-background;
+  height: 80px;
+}
+
+%hamburger-line {
+  content: "";
+  position: relative;
+  background-color: $color-accent;
+  @include image($width: 40px, $height: 4px, $radius: 0px);
+  display: inline-block;
+}
+
+%close-line {
+  content: "";
+  position: absolute;
+  background-color: $color-accent;
+  @include image($width: 40px, $height: 4px, $radius: 0px);
+  display: inline-block;
+}
+
+.hamburger {
+  margin-top: 24px;
+  background-color: $color-accent;
+  @include image($width: 40px, $height: 4px, $radius: 0px);
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    @extend %hamburger-line;
+    top: 100%;
+    left: 0;
+  }
+  &::backdrop {
+  }
+  &::after {
+    @extend %hamburger-line;
+    bottom: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,13 @@
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixin";
+
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

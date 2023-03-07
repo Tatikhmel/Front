@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 * {
   margin: 0;
@@ -16,31 +16,73 @@ body {
   font-size: 1.6 rem; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 html {
-  font-family: "Moyenage", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.header {
+  background-color: #131313;
+  height: 80px; }
+
+.hamburger::before, .hamburger::after {
+  content: "";
+  position: relative;
+  background-color: #a40e04;
+  width: 40px;
+  height: 4px;
+  border-radius: 0px;
+  display: inline-block; }
+
+.hamburger {
+  margin-top: 24px;
+  background-color: #a40e04;
+  width: 40px;
+  height: 4px;
+  border-radius: 0px;
+  display: inline-block;
+  position: relative; }
+  .hamburger::before {
+    top: 100%;
+    left: 0; }
+  .hamburger::after {
+    bottom: 0;
+    left: 0; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.wrapper {
+  max-width: 1160px;
+  margin: auto; }
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between; }
 
 @font-face {
   font-family: "Moyenage";
