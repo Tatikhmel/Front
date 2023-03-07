@@ -24,7 +24,7 @@
 }
 
 .hamburger {
-  margin-top: 24px;
+  margin-top: 20px;
   background-color: $color-accent;
   @include image($width: 40px, $height: 4px, $radius: 0px);
   display: inline-block;
@@ -34,8 +34,6 @@
     @extend %hamburger-line;
     top: 100%;
     left: 0;
-  }
-  &::backdrop {
   }
   &::after {
     @extend %hamburger-line;

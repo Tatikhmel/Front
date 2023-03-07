@@ -1,3 +1,46 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+html {
+  background-color: $color_background;
+}
+
+.prices {
+  background-image: url(../img/Background_prices.png);
+  background-size: cover;
+  height: 609px;
+  background-position: 0% 35%;
+}
+
+.prices__content {
+  margin: 0 200px 0 200px;
+  text-align: center;
+}
+
+.prices__headline {
+  @extend %font;
+  text-align: center;
+  transform: translateY(-780%);
+}
+
+.price__block {
+  margin-bottom: 40px;
+}
+
+.price__line {
+  display: flex;
+  justify-content: space-between;
+  @include font(
+    $size: 24px,
+    $weight: 600,
+    $transform: none,
+    $height: 29px,
+    $style: normal
+  );
+  margin-bottom: 7px;
+}
+
+.prices__button {
+  margin-top: 80px;
+}
