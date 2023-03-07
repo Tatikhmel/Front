@@ -16,6 +16,7 @@
   $transform,
   $size,
   $line_height,
+  $weight,
   $cursor: pointer
 ) {
   width: $width;
@@ -27,6 +28,7 @@
   text-transform: $transform;
   font-size: $size;
   line-height: $line_height;
+  font-weight: $weight;
   cursor: $cursor;
 }
 

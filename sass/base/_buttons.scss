@@ -1,3 +1,19 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+.button-main {
+  @include button(
+    $width: 195px,
+    $height: 53px,
+    $radius: 0,
+    $border: 0,
+    $color_background: $color-accent-additional,
+    $color: $color-font-additional,
+    $transform: none,
+    $size: 24px,
+    $line_height: 29px,
+    $weight: 600,
+    $cursor: pointer
+  );
+}

@@ -1,3 +1,39 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+.promo {
+  background-image: url(../img/Background_promo.png);
+  background-size: cover;
+  height: 620px;
+  background-position: 0% 20%;
+}
+
+.promo__content {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.promo__headline {
+  @extend %font;
+  @include font(
+    $size: 96px,
+    $weight: 400,
+    $transform: none,
+    $height: 96px,
+    $style: normal
+  );
+  color: $color-font;
+}
+
+.promo__headline-additional {
+  @include font(
+    $size: 24px,
+    $weight: 600,
+    $transform: none,
+    $height: 29px,
+    $style: normal
+  );
+  color: $color-font;
+  margin-bottom: 120px;
+}

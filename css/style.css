@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
 html {
   font-family: "Montserrat", sans-serif; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
@@ -15,32 +21,102 @@ html {
 body {
   font-size: 1.6 rem; }
 
-html {
-  font-family: "Montserrat", sans-serif; }
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-html {
-  font-family: "Montserrat", sans-serif; }
+.button-main {
+  width: 195px;
+  height: 53px;
+  border-radius: 0;
+  border: 0;
+  background-color: #0ff5e3;
+  color: #0c0c0c;
+  text-transform: none;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  cursor: pointer; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-html {
-  font-family: "Montserrat", sans-serif; }
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-html {
-  font-family: "Montserrat", sans-serif; }
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
 html {
   font-family: "Montserrat", sans-serif; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.promo {
+  background-image: url(../img/Background_promo.png);
+  background-size: cover;
+  height: 620px;
+  background-position: 0% 20%; }
+
+.promo__content {
+  margin-top: 120px;
+  text-align: center; }
+
+.promo__headline {
+  font-size: 96px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 96px;
+  font-style: normal;
+  color: #f1e4c4; }
+
+.promo__headline-additional {
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 29px;
+  font-style: normal;
+  color: #f1e4c4;
+  margin-bottom: 120px; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
@@ -73,6 +149,9 @@ html {
     bottom: 0;
     left: 0; }
 
+.promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
 html {
   font-family: "Montserrat", sans-serif; }
 
@@ -83,6 +162,10 @@ html {
 .header__wrapper {
   display: flex;
   justify-content: space-between; }
+
+.promo__wrapper {
+  display: flex;
+  justify-content: flex-end; }
 
 @font-face {
   font-family: "Moyenage";
