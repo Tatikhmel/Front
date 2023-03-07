@@ -1,3 +1,58 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+.product__card {
+  width: 260px;
+  background-color: $color-background-light;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.products__wrapper {
+  @include flex($width: 24.5%);
+  width: 1050px;
+}
+
+.product__card-rectangle {
+  width: 260px;
+  height: 545px;
+}
+
+.product__card-square {
+  height: 260px;
+  width: 260px;
+}
+
+.product__title {
+  margin-top: 31px;
+  @include font(
+    $size: 14px,
+    $weight: 400,
+    $transform: none,
+    $height: 17.07px,
+    $style: normal
+  );
+  color: $color_background;
+}
+.product__description {
+  @include font(
+    $size: 20px,
+    $weight: 600,
+    $transform: none,
+    $height: 24px,
+    $style: normal
+  );
+  color: $color_background;
+}
+.product__price {
+  @include font(
+    $size: 20px,
+    $weight: 600,
+    $transform: none,
+    $height: 25px,
+    $style: normal
+  );
+  color: $color-accent;
+}

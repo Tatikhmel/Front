@@ -195,6 +195,54 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
+.product__card {
+  width: 260px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 5px; }
+
+.products__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1050px; }
+  .products__wrapper > * {
+    flex-basis: 24.5%; }
+
+.product__card-rectangle {
+  width: 260px;
+  height: 545px; }
+
+.product__card-square {
+  height: 260px;
+  width: 260px; }
+
+.product__title {
+  margin-top: 31px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 17.07px;
+  font-style: normal;
+  color: #131313; }
+
+.product__description {
+  font-size: 20px;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 24px;
+  font-style: normal;
+  color: #131313; }
+
+.product__price {
+  font-size: 20px;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 25px;
+  font-style: normal;
+  color: #a40e04; }
+
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
