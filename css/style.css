@@ -83,6 +83,9 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
+.footer {
+  margin-bottom: 80px; }
+
 .footer__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -130,15 +133,22 @@ html {
   font-weight: 600;
   line-height: 25px;
   font-style: normal;
-  border: 1px solid #a40e04;
+  border: 2px solid #a40e04;
   border-radius: 9px;
-  width: 220px; }
+  width: 220px;
+  padding: 3px; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
+
+.gallery__card {
+  width: 370px;
+  height: 370px;
+  margin: 5px;
+  box-shadow: 0px 9px 23px rgba(0, 0, 0, 0.25); }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -193,6 +203,7 @@ html {
 
 .promo {
   background-image: url(../img/Background_promo.png);
+  background-repeat: no-repeat;
   background-size: cover;
   height: 620px;
   background-position: 0% 20%; }

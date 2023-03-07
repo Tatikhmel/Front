@@ -2,6 +2,10 @@
 @import "abstract/placeholders";
 @import "abstract/mixin";
 
+.footer {
+  margin-bottom: 80px;
+}
+
 .footer__wrapper {
   @include flex($width: 30%);
   text-align: center;
@@ -54,7 +58,8 @@
     $style: normal
   );
 
-  border: 1px solid $color-accent;
+  border: 2px solid $color-accent;
   border-radius: 9px;
   width: 220px;
+  padding: 3px;
 }
