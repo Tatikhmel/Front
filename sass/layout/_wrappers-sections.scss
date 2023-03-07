@@ -2,6 +2,11 @@
 @import "abstract/placeholders";
 @import "abstract/mixin";
 
+section {
+  background-color: $color-background-additional;
+  padding: 120px 0;
+}
+
 .wrapper {
   max-width: $content-width;
   margin: auto;

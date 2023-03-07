@@ -8,10 +8,13 @@
 }
 
 html {
+  @include font(
+    $size: 20px,
+    $weight: 400,
+    $transform: none,
+    $height: 24.38px,
+    $style: normal
+  );
   @extend %font-additional;
-  font-size: 1rem;
-}
-
-body {
-  font-size: 1.6 rem;
+  color: $color-font;
 }

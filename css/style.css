@@ -16,10 +16,12 @@ html {
   padding: 0; }
 
 html {
-  font-size: 1rem; }
-
-body {
-  font-size: 1.6 rem; }
+  font-size: 20px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 24.38px;
+  font-style: normal;
+  color: #f1e4c4; }
 
 .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -154,6 +156,10 @@ html {
 
 html {
   font-family: "Montserrat", sans-serif; }
+
+section {
+  background-color: #1e1e1e;
+  padding: 120px 0; }
 
 .wrapper {
   max-width: 1160px;
