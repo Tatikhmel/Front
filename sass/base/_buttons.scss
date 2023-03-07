@@ -17,3 +17,25 @@
     $cursor: pointer
   );
 }
+
+.button_secondary {
+  @include button(
+    $width: 260px,
+    $height: 60px,
+    $radius: 0,
+    $border: 0,
+    $color_background: $color-accent,
+    $color: $color-font-light,
+    $transform: none,
+    $size: 16px,
+    $line_height: 20px,
+    $weight: 600,
+    $cursor: pointer
+  );
+}
+.workshop-learn-more__button {
+  background-color: transparent !important;
+  border: solid 1px $color-accent;
+  margin-top: 16px;
+  color: $color-accent;
+}

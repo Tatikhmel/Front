@@ -24,7 +24,8 @@ html {
   color: #f3ecdb; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
 
 h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -44,6 +45,25 @@ html {
   line-height: 29px;
   font-weight: 600;
   cursor: pointer; }
+
+.button_secondary {
+  width: 260px;
+  height: 60px;
+  border-radius: 0;
+  border: 0;
+  background-color: #a40e04;
+  color: #fff;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer; }
+
+.workshop-learn-more__button {
+  background-color: transparent !important;
+  border: solid 1px #a40e04;
+  margin-top: 16px;
+  color: #a40e04; }
 
 h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -85,9 +105,6 @@ html {
   background-size: cover;
   height: 609px;
   background-position: 0% 35%; }
-
-.prices__headline {
-  margin-bottom: 40px; }
 
 .prices__content {
   margin: 0px auto;
@@ -156,14 +173,36 @@ h3, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
-.workshop__cards-container {
+.workshops__wrapper {
   display: flex;
   flex-direction: row;
-  gap: 60px; }
+  gap: 50px; }
+
+.workshops__headline {
+  margin-bottom: 169px; }
+
+.workshop__cards-container {
+  width: 350px;
+  height: 713px;
+  text-align: center;
+  background-color: #1c1c1c;
+  box-shadow: 0px 9px 23px rgba(0, 0, 0, 0.25); }
 
 .workshop__card {
-  width: 350px;
-  height: 713px; }
+  transform: translateY(-130px); }
+
+.workshop__type {
+  color: #f1e4c4; }
+
+.workshop__description {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-style: normal;
+  padding: 24px 45px;
+  text-align: start;
+  color: #f1e4c4; }
 
 h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
