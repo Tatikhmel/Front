@@ -1,3 +1,60 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+.footer__wrapper {
+  @include flex($width: 30%);
+  text-align: center;
+  color: $color-accent;
+}
+
+.footer__column-left {
+  text-align: start;
+}
+.footer__column-center {
+  @include flex($width: 20%);
+  text-align: start;
+}
+
+.footer__column-right {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__nav {
+  list-style: none;
+  @include font(
+    $size: 16px,
+    $weight: 600,
+    $transform: none,
+    $height: 20px,
+    $style: normal
+  );
+  margin-bottom: 4px;
+}
+
+.footer__branding {
+  @extend %font;
+  @include font(
+    $size: 32px,
+    $weight: 400,
+    $transform: none,
+    $height: 32px,
+    $style: normal
+  );
+  margin-bottom: 24px;
+}
+
+.footer__phone {
+  @include font(
+    $size: 20px,
+    $weight: 600,
+    $transform: none,
+    $height: 25px,
+    $style: normal
+  );
+
+  border: 1px solid $color-accent;
+  border-radius: 9px;
+  width: 220px;
+}

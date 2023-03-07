@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -27,7 +27,7 @@ h3 {
   text-align: center;
   margin-bottom: 40px; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -65,31 +65,82 @@ html {
   margin-top: 16px;
   color: #a40e04; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-h3, .promo__headline {
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  color: #a40e04; }
+  .footer__wrapper > * {
+    flex-basis: 30%; }
+
+.footer__column-left {
+  text-align: start; }
+
+.footer__column-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: start; }
+  .footer__column-center > * {
+    flex-basis: 20%; }
+
+.footer__column-right {
+  display: flex;
+  justify-content: end; }
+
+.footer__nav {
+  list-style: none;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 20px;
+  font-style: normal;
+  margin-bottom: 4px; }
+
+.footer__branding {
+  font-size: 32px;
+  text-transform: none;
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  margin-bottom: 24px; }
+
+.footer__phone {
+  font-size: 20px;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 25px;
+  font-style: normal;
+  border: 1px solid #a40e04;
+  border-radius: 9px;
+  width: 220px; }
+
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -128,13 +179,13 @@ html {
 .prices__button {
   margin-top: 40px; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -167,7 +218,7 @@ html {
   color: #f3ecdb;
   margin-bottom: 120px; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -204,7 +255,7 @@ html {
   text-align: start;
   color: #f1e4c4; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -238,7 +289,7 @@ html {
     bottom: 0;
     left: 0; }
 
-h3, .promo__headline {
+h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
