@@ -3,11 +3,13 @@
 @import "abstract/mixin";
 
 .product__card {
+  position: relative;
   width: 260px;
   background-color: $color-background-light;
   text-align: center;
   padding-top: 20px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .products__wrapper {
@@ -36,7 +38,7 @@
   );
   color: $color_background;
 }
-.product__description {
+.product__type {
   @include font(
     $size: 20px,
     $weight: 600,

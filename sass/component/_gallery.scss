@@ -2,7 +2,8 @@
 @import "abstract/placeholders";
 @import "abstract/mixin";
 
-.gallery__card {
+.gallery__image {
+  overflow: hidden;
   width: 370px;
   height: 370px;
   margin: 5px;

@@ -144,7 +144,8 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
-.gallery__card {
+.gallery__image {
+  overflow: hidden;
   width: 370px;
   height: 370px;
   margin: 5px;
@@ -196,11 +197,13 @@ html {
   font-family: "Montserrat", sans-serif; }
 
 .product__card {
+  position: relative;
   width: 260px;
   background-color: #fff;
   text-align: center;
   padding-top: 20px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  cursor: pointer; }
 
 .products__wrapper {
   display: flex;
@@ -227,7 +230,7 @@ html {
   font-style: normal;
   color: #131313; }
 
-.product__description {
+.product__type {
   font-size: 20px;
   text-transform: none;
   font-weight: 600;
