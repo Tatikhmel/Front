@@ -6,22 +6,39 @@ html {
   background-color: $color_background;
 }
 
-.prices {
+.prices__wrapper {
+  max-width: 100% !important;
+  position: relative;
   background-image: url(../img/Background_prices.png);
   background-size: cover;
-  height: 609px;
+  height: 709px;
   background-position: 0% 35%;
-}
 
-.prices__content {
-  margin: 0 200px 0 200px;
-  text-align: center;
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   @include position(
+  //     $position: absolute,
+  //     $right: 0,
+  //     $top: 0,
+  //     $left: 0,
+  //     $bottom: 0
+  //   );
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(0, 0, 0, 0.4);
+  // }
 }
 
 .prices__headline {
-  @extend %font;
+  margin-bottom: 40px;
+}
+
+.prices__content {
+  margin: 0px auto;
+  padding: 80px 0;
+  max-width: 710px;
   text-align: center;
-  transform: translateY(-780%);
 }
 
 .price__block {
@@ -42,5 +59,5 @@ html {
 }
 
 .prices__button {
-  margin-top: 80px;
+  margin-top: 40px;
 }

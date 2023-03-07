@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -21,9 +21,12 @@ html {
   font-weight: 400;
   line-height: 24.38px;
   font-style: normal;
-  color: #f1e4c4; }
+  color: #f3ecdb; }
 
-.prices__headline, .promo__headline {
+h3 {
+  text-align: center; }
+
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -42,31 +45,31 @@ html {
   font-weight: 600;
   cursor: pointer; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -75,19 +78,22 @@ html {
 html {
   background-color: #131313; }
 
-.prices {
+.prices__wrapper {
+  max-width: 100% !important;
+  position: relative;
   background-image: url(../img/Background_prices.png);
   background-size: cover;
-  height: 609px;
+  height: 709px;
   background-position: 0% 35%; }
 
-.prices__content {
-  margin: 0 200px 0 200px;
-  text-align: center; }
-
 .prices__headline {
-  text-align: center;
-  transform: translateY(-780%); }
+  margin-bottom: 40px; }
+
+.prices__content {
+  margin: 0px auto;
+  padding: 80px 0;
+  max-width: 710px;
+  text-align: center; }
 
 .price__block {
   margin-bottom: 40px; }
@@ -103,15 +109,15 @@ html {
   margin-bottom: 7px; }
 
 .prices__button {
-  margin-top: 80px; }
+  margin-top: 40px; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -133,7 +139,7 @@ html {
   font-weight: 400;
   line-height: 96px;
   font-style: normal;
-  color: #f1e4c4; }
+  color: #f3ecdb; }
 
 .promo__headline-additional {
   font-size: 24px;
@@ -141,16 +147,25 @@ html {
   font-weight: 600;
   line-height: 29px;
   font-style: normal;
-  color: #f1e4c4;
+  color: #f3ecdb;
   margin-bottom: 120px; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
-.prices__headline, .promo__headline {
+.workshop__cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px; }
+
+.workshop__card {
+  width: 350px;
+  height: 713px; }
+
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
@@ -184,15 +199,15 @@ html {
     bottom: 0;
     left: 0; }
 
-.prices__headline, .promo__headline {
+h3, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
 
 section {
-  background-color: #1e1e1e;
-  padding: 120px 0; }
+  background-color: #131313;
+  margin-bottom: 120px; }
 
 .wrapper {
   max-width: 1160px;

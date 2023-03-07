@@ -1,3 +1,14 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+.workshop__cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.workshop__card {
+  width: 350px;
+  height: 713px;
+}
