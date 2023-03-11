@@ -16,6 +16,12 @@
     $weight: 600,
     $cursor: pointer
   );
+
+  &:hover {
+    background: transparent;
+    border: 2px solid $color-accent-additional;
+    color: $color-accent-additional;
+  }
 }
 
 .button_secondary {
