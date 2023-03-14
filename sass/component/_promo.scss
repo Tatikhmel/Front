@@ -6,12 +6,16 @@
   background-image: url(../img/Background_promo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 620px;
+  height: 100vh;
   background-position: 0% 20%;
+  position: relative;
 }
 
 .promo__content {
-  margin-top: 120px;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-70%, -50%);
   text-align: center;
 }
 

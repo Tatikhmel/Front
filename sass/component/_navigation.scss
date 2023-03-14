@@ -1,3 +1,7 @@
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixin";
+
+.header__navigation {
+  display: none;
+}

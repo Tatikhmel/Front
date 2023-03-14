@@ -75,6 +75,9 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
+.header__navigation {
+  display: none; }
+
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
@@ -260,11 +263,15 @@ html {
   background-image: url(../img/Background_promo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 620px;
-  background-position: 0% 20%; }
+  height: 100vh;
+  background-position: 0% 20%;
+  position: relative; }
 
 .promo__content {
-  margin-top: 120px;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-70%, -50%);
   text-align: center; }
 
 .promo__headline {
