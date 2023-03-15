@@ -9,7 +9,8 @@ html {
 .prices__wrapper {
   max-width: 100% !important;
   position: relative;
-  background-image: url(../img/Background_prices.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/Background_prices.png);
   background-size: cover;
   height: 609px;
   background-position: 0% 35%;
