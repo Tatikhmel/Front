@@ -7,9 +7,14 @@
     url(../img/Background_promo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 8rem);
   background-position: 0% 20%;
   position: relative;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .promo__content {
@@ -23,10 +28,10 @@
 .promo__headline {
   @extend %font;
   @include font(
-    $size: 96px,
+    $size: 9.6rem,
     $weight: 400,
     $transform: none,
-    $height: 96px,
+    $height: 9.6rem,
     $style: normal
   );
   color: $color-font;
@@ -34,12 +39,12 @@
 
 .promo__headline-additional {
   @include font(
-    $size: 24px,
+    $size: 2.4rem,
     $weight: 600,
     $transform: none,
-    $height: 29px,
+    $height: 2.9rem,
     $style: normal
   );
   color: $color-font;
-  margin-bottom: 120px;
+  margin-bottom: 12rem;
 }

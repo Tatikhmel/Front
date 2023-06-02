@@ -4,20 +4,10 @@
 
 section {
   background-color: $color-background;
-  margin-bottom: 120px;
+  padding: 0 3.2rem 12rem 3.2rem;
 }
 
 .wrapper {
   max-width: $content-width;
   margin: auto;
-}
-
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.promo__wrapper {
-  display: flex;
-  justify-content: flex-end;
 }

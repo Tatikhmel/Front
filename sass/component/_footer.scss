@@ -3,7 +3,8 @@
 @import "abstract/mixin";
 
 .footer {
-  margin-bottom: 80px;
+  margin-bottom: 8rem;
+  padding: 0 3.2rem;
 }
 
 .footer__wrapper {
@@ -29,34 +30,34 @@
 .footer__nav {
   list-style: none;
   @include font(
-    $size: 16px,
+    $size: 1.6rem,
     $weight: 600,
     $transform: none,
-    $height: 20px,
+    $height: 2rem,
     $style: normal
   );
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
   cursor: pointer;
 }
 
 .footer__branding {
   @extend %font;
   @include font(
-    $size: 32px,
+    $size: 3.2rem,
     $weight: 400,
     $transform: none,
-    $height: 32px,
+    $height: 3.2rem,
     $style: normal
   );
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 }
 
 .footer__phone {
   @include font(
-    $size: 20px,
+    $size: 2rem,
     $weight: 600,
     $transform: none,
-    $height: 25px,
+    $height: 2.5rem,
     $style: normal
   );
 

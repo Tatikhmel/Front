@@ -4,7 +4,14 @@
 
 .header {
   background-color: $color-background;
-  height: 80px;
+  height: 8rem;
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 %hamburger-line {
@@ -25,11 +32,13 @@
 
 .hamburger {
   cursor: pointer;
-  margin-top: 20px;
   background-color: $color-accent;
   @include image($width: 40px, $height: 4px, $radius: 0px);
   display: inline-block;
-  position: relative;
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translate(0, -250%);
 
   &::before {
     @extend %hamburger-line;

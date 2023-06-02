@@ -8,6 +8,8 @@
     <title>Kroconails</title>
     <script defer src="registration.js"></script>
     <script defer src="main_page.js"></script>
+    <src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/react-dom.production.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -21,8 +23,8 @@
         </div>
       </div>
     </header>
-    <nav>
-      <!-- <form class="signUp">
+    <!-- <nav>
+      <form class="signUp">
         <label for="phone">First name:</label>
         <input
           type="text"
@@ -83,21 +85,22 @@
           onclick="checkSignInUser()"
           value="Submit"
         />
-      </form> -->
-    </nav>
+      </form>
+    </nav> -->
 
     <section class="promo">
       <div class="wrapper promo__wrapper">
         <div class="promo__content">
           <h1 class="promo__headline">kroconails</h1>
           <h2 class="promo__headline-additional">Маник по-пацански</h2>
-          <button class="button-main promo__button">Записаться</button>
+          <a href="#" class="button-main promo__button">Записаться</a>
         </div>
       </div>
     </section>
 
     <section class="description">
       <div class="wrapper description__wrapper">
+        <h3 class="description__headline">О нас</h3>
         <p class="description__text">
           Если ты так соскучился по временам, когда вместо салонов красоты ты
           делал маникюр своей сестре, то Кроконейлс - твое идеальное место для
@@ -114,10 +117,8 @@
     </section>
 
     <section class="gallery">
+      <h3 class="gallery__headline">Галерея</h3>
       <div class="wrapper gallery__wrapper">
-        <img src="./img/slide_1.jpg" class="gallery__image" alt="">
-        <img src="./img/slide_2.jpg" class="gallery__image" alt="">
-        <img src="./img/slide_3.jpg" class="gallery__image" alt="">
         <img src="./img/slide_4.jpg" class="gallery__image" alt="">
         <img src="./img/slide_5.jpg" class="gallery__image" alt="">
         <img src="./img/slide_6.jpg" class="gallery__image" alt="">
@@ -168,7 +169,7 @@
               <p>300&#8381 3000&#8381</p>
             </li>
           </ul>
-          <button class="button-main prices__button">Записаться</button>
+          <a href="#" class="button-main prices__button">Записаться</a>
         </div>
       </div>
     </section>
@@ -176,7 +177,7 @@
     <section class="products">
       <h3>Продукция</h3>
       <div class="wrapper products__wrapper">
-        <div class="prosucts__square-box">        
+        <div class="products__square-box">        
           <div class="product__card product__card-square">
             <img src="./img/product_3.png" class="product__image" alt="">
             <p class="product__title">DEPOT</p>
@@ -196,7 +197,7 @@
                       <p class="product__type">Шампунь для волос</p>
             <p class="product__price">800&#8381</p>
         </div>
-        <div class="prosucts__square-box">        
+        <div class="products__square-box">        
           <div class="product__card product__card-square">
             <img src="./img/product_4.png" class="product__image" alt="">
                         <p class="product__title">UPPERCUT</p>
@@ -238,17 +239,15 @@
               получишь сертификат, который подтвердит твои навыки и поможет
               начать свою карьеру в индустрии красоты.
             </p>
-<div class="workshop__buttons"> <button class="button_secondary workshop__button">
-              Приобрести курс
-            </button>
-            <button class="button_secondary workshop-learn-more__button">
-              Узнать больше о курсе
-            </button></div>
+<div class="workshop__buttons"> 
+  <a href="#" class="button_secondary workshop__button margin-bottom-sm"> Приобрести курс</a>
+  <a href="#" class="button_secondary workshop-learn-more__button">Узнать больше о курсе</a>
+            </div>
           </div>
           </div>
           <div class="workshop__cards-container">
           <div class="workshop__card">
-                       <div class="workshop__card-imagebox">
+               <div class="workshop__card-imagebox">
               <img
               src="./img/slide_1.jpg"
               class="workshop__card-image"
@@ -264,12 +263,9 @@
               получишь сертификат, который подтвердит твои навыки и поможет
               начать свою карьеру в индустрии красоты.
             </p>
-<div class="workshop__buttons"> <button class="button_secondary workshop__button">
-              Приобрести курс
-            </button>
-            <button class="button_secondary workshop-learn-more__button">
-              Узнать больше о курсе
-            </button></div>
+<div class="workshop__buttons"> 
+  <a href="#" class="button_secondary workshop__button margin-bottom-sm"> Приобрести курс</a>
+  <a href="#" class="button_secondary workshop-learn-more__button">Узнать больше о курсе</a></div>
           </div>
           </div>
           <div class="workshop__cards-container">
@@ -290,12 +286,8 @@
               получишь сертификат, который подтвердит твои навыки и поможет
               начать свою карьеру в индустрии красоты.
             </p>
-            <div class="workshop__buttons"> <button class="button_secondary workshop__button">
-              Приобрести курс
-            </button>
-            <button class="button_secondary workshop-learn-more__button">
-              Узнать больше о курсе
-            </button></div>
+            <div class="workshop__buttons"> <a href="#" class="button_secondary workshop__button margin-bottom-sm"> Приобрести курс</a>
+  <a href="#" class="button_secondary workshop-learn-more__button">Узнать больше о курсе</a></div>
            
           </div>
         </div>

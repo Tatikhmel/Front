@@ -3,48 +3,15 @@
 /////////////////////////////////////////////////
 // Data
 
-let inputSignUpFirstName = document.querySelector(".signUp__input--firstName");
-let inputSignUpLastName = document.querySelector(".signUp__input--lastName");
-let inputSignUpPhoneNumber = document.querySelector(
-  ".signUp__input--telephoneNumber"
-);
-let inputSignUpPassword = document.querySelector(".signUp__input--password");
-
-let inputSignInPhoneNumber = document.querySelector(
-  ".signIn__input--telephoneNumber"
-);
-let inputSignInPassword = document.querySelector(".signIn__input--password");
-
-const btnSignUp = document.querySelector(".signUp__btn");
-const formSignUp = document.querySelector(".signUp");
-const btnSignIn = document.querySelector(".signIn__btn");
-
-/////////////////////////////////////////////////
-// EventListeners
-
-/////////////////////////////////////////////////
-// Functions
-
-const getJson = function (url, errorMsg = "Something went wrong") {
-  return (
-    fetch(url).then |
-    ((response) => {
-      if (!response.ok) throw new Error(`${errorMsg} (${response.status})`);
-
-      return response.json();
-    })
-  );
-};
-
 const addUser = async function () {
   if (
     inputSignUpFirstName &&
     inputSignUpLastName &&
-    inputSignUpPhoneNumber &&
+    inputPhoneNumber &&
     inputSignUpPassword &&
-    inputSignUpPhoneNumber.length === 10 &&
-    inputSignUpPassword.length > 6 &&
-    inputSignUpPassword.length < 12
+    inputSignUpPhoneNumber.value.length === 10 &&
+    inputSignUpPassword.value.length > 6 &&
+    inputSignUpPassword.value.length < 12
   ) {
     const response = await fetch("http://127.0.0.1:8080/registration", {
       method: "POST",
@@ -66,16 +33,16 @@ const addUser = async function () {
       alert(response.statusText);
     }
   } else {
-    console.log("wrong phone");
+    alert("Please enter valid input");
   }
 };
 
 const checkSignInUser = async function () {
   if (inputSignInPhoneNumber && inputSignInPassword) {
-    const response = await fetch("http://127.0.0.1:8080/registration", {
+    const response = await fetch("http://127.0.0.1:8080/login", {
       method: "POST",
       body: JSON.stringify({
-        telephoneNumber: `+7${inputSignUpPhoneNumber.value}`,
+        telephoneNumber: `+7${inputSignInPhoneNumber.value}`,
         password: inputSignInPassword.value,
       }),
       headers: {

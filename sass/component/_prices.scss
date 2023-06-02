@@ -6,40 +6,45 @@ html {
   background-color: $color_background;
 }
 
+.prices {
+  padding: 0;
+}
+
 .prices__wrapper {
   max-width: 100% !important;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/Background_prices.png);
   background-size: cover;
-  height: 609px;
+  height: 60.9rem;
   background-position: 0% 35%;
+  padding: 0 3.2rem;
 }
 
 .prices__content {
-  margin: 0px auto;
-  padding: 80px 0;
-  max-width: 710px;
+  margin: 0 auto;
+  padding: 8rem 0;
+  max-width: 71rem;
   text-align: center;
 }
 
 .price__block {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 .price__line {
   display: flex;
   justify-content: space-between;
   @include font(
-    $size: 24px,
+    $size: 2.4rem,
     $weight: 600,
     $transform: none,
-    $height: 29px,
+    $height: 2.9rem,
     $style: normal
   );
-  margin-bottom: 7px;
+  margin-bottom: 0.7rem;
 }
 
 .prices__button {
-  margin-top: 40px;
+  margin-top: 4rem;
 }

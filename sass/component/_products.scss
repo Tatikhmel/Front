@@ -2,57 +2,60 @@
 @import "abstract/placeholders";
 @import "abstract/mixin";
 
+.products__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin: 0 auto;
+  width: 106rem;
+}
+
 .product__card {
-  width: 260px;
+  width: 100%;
   background-color: $color-background-light;
   text-align: center;
-  padding-top: 20px;
-  margin-bottom: 5px;
+  padding-top: 2rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
 }
 
-.products__wrapper {
-  @include flex($width: 24.5%);
-  width: 1050px;
-}
-
 .product__card-rectangle {
-  width: 260px;
-  height: 545px;
+  width: 26rem;
+  height: 52.5rem;
 }
 
 .product__card-square {
-  height: 260px;
-  width: 260px;
+  width: 26rem;
+  height: 26rem;
 }
 
 .product__title {
-  margin-top: 31px;
+  margin-top: 3.1rem;
   @include font(
-    $size: 14px,
+    $size: 1.4rem,
     $weight: 400,
     $transform: none,
-    $height: 17.07px,
+    $height: 1.7rem,
     $style: normal
   );
   color: $color_background;
 }
 .product__type {
   @include font(
-    $size: 20px,
+    $size: 2rem,
     $weight: 600,
     $transform: none,
-    $height: 24px,
+    $height: 2.4rem,
     $style: normal
   );
   color: $color_background;
 }
 .product__price {
   @include font(
-    $size: 20px,
+    $size: 2rem,
     $weight: 600,
     $transform: none,
-    $height: 25px,
+    $height: 2.5rem,
     $style: normal
   );
   color: $color-accent;

@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
+
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -13,19 +21,28 @@ html {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html {
-  font-size: 20px;
+  font-size: 62.5%;
   text-transform: none;
   font-weight: 400;
-  line-height: 24.38px;
+  line-height: 1.5;
   font-style: normal;
   color: #f3ecdb; }
 
 h3 {
   text-align: center;
-  margin-bottom: 40px; }
+  margin-bottom: 4rem;
+  font-size: 4rem; }
+
+p {
+  font-size: 2rem; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -33,41 +50,45 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
-.button-main {
-  width: 195px;
-  height: 53px;
-  border-radius: 0;
-  border: 0;
+.button-main:link,
+.button-main:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
   background-color: #0ff5e3;
-  color: #0c0c0c;
-  text-transform: none;
-  font-size: 24px;
-  line-height: 29px;
+  cursor: pointer;
+  font-size: 2.4rem;
   font-weight: 600;
-  cursor: pointer; }
-  .button-main:hover {
+  color: #0c0c0c; }
+  .button-main:link:hover,
+  .button-main:visited:hover {
     background: transparent;
-    border: 2px solid #0ff5e3;
+    box-shadow: inset 0 0 0 2px #0ff5e3;
     color: #0ff5e3; }
 
-.button_secondary {
-  width: 260px;
-  height: 60px;
-  border-radius: 0;
-  border: 0;
+.button_secondary:link,
+.button_secondary:visited {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
   background-color: #a40e04;
-  color: #fff;
-  text-transform: none;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2rem;
   font-weight: 600;
-  cursor: pointer; }
+  color: #fff;
+  width: 26rem;
+  height: 6rem;
+  padding-top: 2rem; }
 
-.workshop-learn-more__button {
-  background-color: transparent !important;
-  border: solid 1px #a40e04;
-  margin-top: 16px;
+.workshop-learn-more__button:link,
+.workshop-learn-more__button:visited {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #a40e04;
   color: #a40e04; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -78,11 +99,22 @@ html {
 .header__navigation {
   display: none; }
 
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
+
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
 
 html {
   font-family: "Montserrat", sans-serif; }
+
+.description {
+  padding-top: 12rem; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -91,7 +123,8 @@ html {
   font-family: "Montserrat", sans-serif; }
 
 .footer {
-  margin-bottom: 80px; }
+  margin-bottom: 8rem;
+  padding: 0 3.2rem; }
 
 .footer__wrapper {
   display: flex;
@@ -119,32 +152,36 @@ html {
 
 .footer__nav {
   list-style: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-transform: none;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 2rem;
   font-style: normal;
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
   cursor: pointer; }
 
 .footer__branding {
-  font-size: 32px;
+  font-size: 3.2rem;
   text-transform: none;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 3.2rem;
   font-style: normal;
-  margin-bottom: 24px; }
+  margin-bottom: 2.4rem; }
 
 .footer__phone {
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: none;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
   font-style: normal;
   border: 2px solid #a40e04;
   border-radius: 9px;
   width: 220px;
   padding: 3px; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -152,12 +189,22 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
+.gallery__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 5px; }
+
 .gallery__image {
   overflow: hidden;
-  width: 370px;
-  height: 370px;
+  width: 100%;
+  height: 100%;
   margin: 5px;
   box-shadow: 0px 9px 23px rgba(0, 0, 0, 0.25); }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -168,35 +215,43 @@ html {
 html {
   background-color: #131313; }
 
+.prices {
+  padding: 0; }
+
 .prices__wrapper {
   max-width: 100% !important;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Background_prices.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Background_prices.png);
   background-size: cover;
-  height: 609px;
-  background-position: 0% 35%; }
+  height: 60.9rem;
+  background-position: 0% 35%;
+  padding: 0 3.2rem; }
 
 .prices__content {
-  margin: 0px auto;
-  padding: 80px 0;
-  max-width: 710px;
+  margin: 0 auto;
+  padding: 8rem 0;
+  max-width: 71rem;
   text-align: center; }
 
 .price__block {
-  margin-bottom: 40px; }
+  margin-bottom: 4rem; }
 
 .price__line {
   display: flex;
   justify-content: space-between;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-transform: none;
   font-weight: 600;
-  line-height: 29px;
+  line-height: 2.9rem;
   font-style: normal;
-  margin-bottom: 7px; }
+  margin-bottom: 0.7rem; }
 
 .prices__button {
-  margin-top: 40px; }
+  margin-top: 4rem; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -204,54 +259,57 @@ h3, .footer__branding, .promo__headline {
 html {
   font-family: "Montserrat", sans-serif; }
 
+.products__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  margin: 0 auto;
+  width: 106rem; }
+
 .product__card {
-  width: 260px;
+  width: 100%;
   background-color: #fff;
   text-align: center;
-  padding-top: 20px;
-  margin-bottom: 5px;
+  padding-top: 2rem;
+  margin-bottom: 0.5rem;
   cursor: pointer; }
 
-.products__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1050px; }
-  .products__wrapper > * {
-    flex-basis: 24.5%; }
-
 .product__card-rectangle {
-  width: 260px;
-  height: 545px; }
+  width: 26rem;
+  height: 52.5rem; }
 
 .product__card-square {
-  height: 260px;
-  width: 260px; }
+  width: 26rem;
+  height: 26rem; }
 
 .product__title {
-  margin-top: 31px;
-  font-size: 14px;
+  margin-top: 3.1rem;
+  font-size: 1.4rem;
   text-transform: none;
   font-weight: 400;
-  line-height: 17.07px;
+  line-height: 1.7rem;
   font-style: normal;
   color: #131313; }
 
 .product__type {
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: none;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 2.4rem;
   font-style: normal;
   color: #131313; }
 
 .product__price {
-  font-size: 20px;
+  font-size: 2rem;
   text-transform: none;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
   font-style: normal;
   color: #a40e04; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -263,9 +321,13 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/Background_promo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 8rem);
   background-position: 0% 20%;
   position: relative; }
+
+.promo__wrapper {
+  display: flex;
+  justify-content: flex-end; }
 
 .promo__content {
   position: absolute;
@@ -275,21 +337,25 @@ html {
   text-align: center; }
 
 .promo__headline {
-  font-size: 96px;
+  font-size: 9.6rem;
   text-transform: none;
   font-weight: 400;
-  line-height: 96px;
+  line-height: 9.6rem;
   font-style: normal;
   color: #f3ecdb; }
 
 .promo__headline-additional {
-  font-size: 24px;
+  font-size: 2.4rem;
   text-transform: none;
   font-weight: 600;
-  line-height: 29px;
+  line-height: 2.9rem;
   font-style: normal;
   color: #f3ecdb;
-  margin-bottom: 120px; }
+  margin-bottom: 12rem; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -300,14 +366,14 @@ html {
 .workshops__wrapper {
   display: flex;
   flex-direction: row;
-  gap: 50px; }
+  gap: 5rem; }
 
 .workshops__headline {
-  margin-bottom: 169px; }
+  margin-bottom: 16.9rem; }
 
 .workshop__cards-container {
-  width: 350px;
-  height: 713px;
+  width: 35rem;
+  height: 71.3rem;
   text-align: center;
   background-color: #1c1c1c;
   box-shadow: 0px 9px 23px rgba(0, 0, 0, 0.25); }
@@ -322,8 +388,8 @@ html {
   margin-bottom: 50%; }
 
 .workshop__card-image {
-  width: 260px;
-  height: 260px;
+  width: 26rem;
+  height: 26rem;
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -333,14 +399,18 @@ html {
   color: #f1e4c4; }
 
 .workshop__description {
-  font-size: 16px;
+  font-size: 1.6rem;
   text-transform: none;
   font-weight: 400;
-  line-height: 19.5px;
+  line-height: 1.95rem;
   font-style: normal;
-  padding: 24px 45px;
+  padding: 2.4rem 4.5rem;
   text-align: start;
   color: #f1e4c4; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -350,7 +420,13 @@ html {
 
 .header {
   background-color: #131313;
-  height: 80px; }
+  height: 8rem; }
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .hamburger::before, .hamburger::after {
   content: "";
@@ -363,19 +439,25 @@ html {
 
 .hamburger {
   cursor: pointer;
-  margin-top: 20px;
   background-color: #a40e04;
   width: 40px;
   height: 4px;
   border-radius: 0px;
   display: inline-block;
-  position: relative; }
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translate(0, -250%); }
   .hamburger::before {
     top: 100%;
     left: 0; }
   .hamburger::after {
     bottom: 0;
     left: 0; }
+
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
 h3, .footer__branding, .promo__headline {
   font-family: "Moyenage", sans-serif; }
@@ -385,19 +467,24 @@ html {
 
 section {
   background-color: #131313;
-  margin-bottom: 120px; }
+  padding: 0 3.2rem 12rem 3.2rem; }
 
 .wrapper {
   max-width: 1160px;
   margin: auto; }
 
-.header__wrapper {
-  display: flex;
-  justify-content: space-between; }
+.button-main:link:hover,
+.button-main:visited:hover {
+  transition: all 0.3s ease-in-out; }
 
-.promo__wrapper {
-  display: flex;
-  justify-content: flex-end; }
+h3, .footer__branding, .promo__headline {
+  font-family: "Moyenage", sans-serif; }
+
+html {
+  font-family: "Montserrat", sans-serif; }
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem !important; }
 
 @font-face {
   font-family: "Moyenage";
